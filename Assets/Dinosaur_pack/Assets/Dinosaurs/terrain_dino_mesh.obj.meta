@@ -3,7 +3,14 @@ guid: c184008f55fcb914ab796509a6247a5c
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: terrainLP_6
+    400000: //RootNode
+    400002: terrainLP_6
+    2300000: terrainLP_6
+    3300000: terrainLP_6
     4300000: terrainLP_6
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0

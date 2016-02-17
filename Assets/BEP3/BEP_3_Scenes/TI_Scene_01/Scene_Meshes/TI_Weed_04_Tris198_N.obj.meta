@@ -3,7 +3,14 @@ guid: 26b971daedc1ae44889aceeb655dbaab
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: NewMesh_tris_198
+    100002: //RootNode
+    400000: NewMesh_tris_198
+    400002: //RootNode
+    2300000: NewMesh_tris_198
+    3300000: NewMesh_tris_198
     4300000: NewMesh_tris_198
+    11100000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0

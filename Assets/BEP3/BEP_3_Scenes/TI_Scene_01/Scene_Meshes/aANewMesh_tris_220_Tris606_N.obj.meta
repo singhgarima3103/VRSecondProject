@@ -3,9 +3,16 @@ guid: 138a753ee635c0743b8941da1a7c01e4
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: NewMesh_tris_606_NewMesh_tris_606_TI_Weed_04
+    400000: //RootNode
+    400002: NewMesh_tris_606_NewMesh_tris_606_TI_Weed_04
+    2300000: NewMesh_tris_606_NewMesh_tris_606_TI_Weed_04
+    3300000: NewMesh_tris_606_NewMesh_tris_606_TI_Weed_04
     4300000: NewMesh_tris_606
     4300002: default
     4300004: NewMesh_tris_606_NewMesh_tris_606_TI_Weed_04
+    11100000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
