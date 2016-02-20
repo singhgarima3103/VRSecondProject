@@ -5,11 +5,12 @@ public class TextTimer : MonoBehaviour {
 
     float timer;
 
+    
     // Use this for initialization
 	void Start () {
         timer = 5f;
 
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -17,6 +18,8 @@ public class TextTimer : MonoBehaviour {
         if (timer <= 0)
         {
             gameObject.SetActive(false);
+            timer = 5f;
         }
+        
 	}
 }
