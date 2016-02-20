@@ -10,6 +10,14 @@ public class Trigger : MonoBehaviour {
     int range = 20;
     public Text ankylosaurus_info;
     public Text brontosaurus_info;
+	public Text carnotaurus_info;
+	public Text velociraptor_info;
+	public Text triceratops_info;
+	public Text tiranosaurus_info;
+	public Text stegosaurus_info;
+	public Text spinosaurus_info;
+	public Text parasaurolophus_info;
+
     public Image background;
 
     void FixedUpdate()
@@ -38,6 +46,41 @@ public class Trigger : MonoBehaviour {
             brontosaurus_info.gameObject.SetActive(true);
             background.gameObject.SetActive(true);
         }
+		if (aim.CompareTag("Carnotaurus"))
+		{
+			carnotaurus_info.gameObject.SetActive(true);
+			background.gameObject.SetActive(true);
+		}
+		if (aim.CompareTag("Velociraptor"))
+		{
+			velociraptor_info.gameObject.SetActive(true);
+			background.gameObject.SetActive(true);
+		}
+		if (aim.CompareTag("Triceratops"))
+		{
+			triceratops_info.gameObject.SetActive(true);
+			background.gameObject.SetActive(true);
+		}
+		if (aim.CompareTag("Tiranosaurus"))
+		{
+			tiranosaurus_info.gameObject.SetActive(true);
+			background.gameObject.SetActive(true);
+		}
+		if (aim.CompareTag("Stegosaurus"))
+		{
+			stegosaurus_info.gameObject.SetActive(true);
+			background.gameObject.SetActive(true);
+		}
+		if (aim.CompareTag("Spinosaurus"))
+		{
+			spinosaurus_info.gameObject.SetActive(true);
+			background.gameObject.SetActive(true);
+		}
+		if (aim.CompareTag("Parasaurolophus"))
+		{
+			parasaurolophus_info.gameObject.SetActive(true);
+			background.gameObject.SetActive(true);
+		}
 
         
 
