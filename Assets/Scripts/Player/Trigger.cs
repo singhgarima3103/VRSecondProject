@@ -10,7 +10,7 @@ public class Trigger : MonoBehaviour {
     int range = 20;
     public Text ankylosaurus_info;
     public Text brontosaurus_info;
-
+    public Image background;
 
     void FixedUpdate()
     {
@@ -31,10 +31,12 @@ public class Trigger : MonoBehaviour {
 		if ( aim.tag == "Ankylosaurus")
         {
             ankylosaurus_info.gameObject.SetActive(true);
+            background.gameObject.SetActive(true);
         }
 		if (aim.CompareTag("Brontosaurus"))
         {
             brontosaurus_info.gameObject.SetActive(true);
+            background.gameObject.SetActive(true);
         }
 
         
