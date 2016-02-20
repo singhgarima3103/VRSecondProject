@@ -7,7 +7,7 @@ public class Trigger : MonoBehaviour {
 
     Ray playerRay;
     RaycastHit playerRaycastHit;
-    int range = 5;
+    int range = 20;
     public Text ankylosaurus_info;
     public Text brontosaurus_info;
 
