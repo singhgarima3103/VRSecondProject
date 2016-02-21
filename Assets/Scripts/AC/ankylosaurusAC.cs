@@ -8,8 +8,8 @@ public class ankylosaurusAC : MonoBehaviour {
     Animator anim;
     LayerMask dinoMask;
     LayerMask playerMask;
-    public GameObject player;
-    float timer;
+    public GameObject enemyBody;
+    
 
     void Awake()
     {
@@ -20,22 +20,17 @@ public class ankylosaurusAC : MonoBehaviour {
 
     void OnTriggerEnter( Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject == enemyBody)
         {
             anim.SetTrigger("Attack");
             anim.SetBool("HaveEnemy", true);
-        }
-           
-        
+        }        
     }
 
     void OnTriggerExit (Collider other)
     {
-        
             anim.SetBool("HaveEnemy", false);
-        
     }
-
     void FixedUpdate()
     {
         
