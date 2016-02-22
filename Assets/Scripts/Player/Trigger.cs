@@ -18,6 +18,7 @@ public class Trigger : MonoBehaviour {
 	public Text spinosaurus_info;
 	public Text parasaurolophus_info;
 
+
     public Image background;
 
     void FixedUpdate()
