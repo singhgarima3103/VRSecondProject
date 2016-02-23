@@ -40,8 +40,8 @@ public class Trigger : MonoBehaviour {
     }
 
     void Interact()
-    {
-        playerRay.origin = GetComponent<Transform>().position;
+	{
+		playerRay.origin = GetComponent<Transform>().position;
         playerRay.direction = GetComponent<Transform>().forward;
         Physics.Raycast(playerRay, out playerRaycastHit, range);
         GameObject aim = playerRaycastHit.collider.gameObject;
@@ -49,54 +49,126 @@ public class Trigger : MonoBehaviour {
         //aim.SetActive(false);
 		if ( aim.tag == "Ankylosaurus")
         {
+			carnotaurus_audio.gameObject.SetActive(false);
+			brontosaurus_audio.gameObject.SetActive(false);
+			velociraptor_audio.gameObject.SetActive(false);
+			tiranosaurus_audio.gameObject.SetActive(false);
+			triceratops_audio.gameObject.SetActive(false);
+			spinosaurus_audio.gameObject.SetActive(false);
+			stegosaurus_audio.gameObject.SetActive(false);
+			parasaurolophus_audio.gameObject.SetActive(false);
 			ankylosaurus_audio.gameObject.SetActive (true);
             ankylosaurus_info.gameObject.SetActive(true);
             background.gameObject.SetActive(true);
         }
 		if (aim.CompareTag("Brontosaurus"))
         {
+			carnotaurus_audio.gameObject.SetActive(false);
+			velociraptor_audio.gameObject.SetActive(false);
+			tiranosaurus_audio.gameObject.SetActive(false);
+			triceratops_audio.gameObject.SetActive(false);
+			spinosaurus_audio.gameObject.SetActive(false);
+			stegosaurus_audio.gameObject.SetActive(false);
+			parasaurolophus_audio.gameObject.SetActive(false);
+			ankylosaurus_audio.gameObject.SetActive (false);
 			brontosaurus_audio.gameObject.SetActive (true);
             brontosaurus_info.gameObject.SetActive(true);
             background.gameObject.SetActive(true);
         }
 		if (aim.CompareTag("Carnotaurus"))
 		{
+			brontosaurus_audio.gameObject.SetActive(false);
+			velociraptor_audio.gameObject.SetActive(false);
+			tiranosaurus_audio.gameObject.SetActive(false);
+			triceratops_audio.gameObject.SetActive(false);
+			spinosaurus_audio.gameObject.SetActive(false);
+			stegosaurus_audio.gameObject.SetActive(false);
+			parasaurolophus_audio.gameObject.SetActive(false);
+			ankylosaurus_audio.gameObject.SetActive (false);
 			carnotaurus_audio.gameObject.SetActive (true);
 			carnotaurus_info.gameObject.SetActive(true);
 			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Velociraptor"))
 		{
+			carnotaurus_audio.gameObject.SetActive(false);
+			brontosaurus_audio.gameObject.SetActive(false);
+			tiranosaurus_audio.gameObject.SetActive(false);
+			triceratops_audio.gameObject.SetActive(false);
+			spinosaurus_audio.gameObject.SetActive(false);
+			stegosaurus_audio.gameObject.SetActive(false);
+			parasaurolophus_audio.gameObject.SetActive(false);
+			ankylosaurus_audio.gameObject.SetActive (false);
 			velociraptor_audio.gameObject.SetActive (true);
 			velociraptor_info.gameObject.SetActive(true);
 			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Triceratops"))
 		{
+			carnotaurus_audio.gameObject.SetActive(false);
+			brontosaurus_audio.gameObject.SetActive(false);
+			velociraptor_audio.gameObject.SetActive(false);
+			tiranosaurus_audio.gameObject.SetActive(false);
+			spinosaurus_audio.gameObject.SetActive(false);
+			stegosaurus_audio.gameObject.SetActive(false);
+			parasaurolophus_audio.gameObject.SetActive(false);
+			ankylosaurus_audio.gameObject.SetActive (false);
 			triceratops_audio.gameObject.SetActive (true);
 			triceratops_info.gameObject.SetActive(true);
 			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Tiranosaurus"))
 		{
+			carnotaurus_audio.gameObject.SetActive(false);
+			brontosaurus_audio.gameObject.SetActive(false);
+			velociraptor_audio.gameObject.SetActive(false);
+			triceratops_audio.gameObject.SetActive(false);
+			spinosaurus_audio.gameObject.SetActive(false);
+			stegosaurus_audio.gameObject.SetActive(false);
+			parasaurolophus_audio.gameObject.SetActive(false);
+			ankylosaurus_audio.gameObject.SetActive (false);
 			tiranosaurus_audio.gameObject.SetActive (true);
 			tiranosaurus_info.gameObject.SetActive(true);
 			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Stegosaurus"))
 		{
+			carnotaurus_audio.gameObject.SetActive(false);
+			brontosaurus_audio.gameObject.SetActive(false);
+			velociraptor_audio.gameObject.SetActive(false);
+			tiranosaurus_audio.gameObject.SetActive(false);
+			triceratops_audio.gameObject.SetActive(false);
+			spinosaurus_audio.gameObject.SetActive(false);
+			parasaurolophus_audio.gameObject.SetActive(false);
+			ankylosaurus_audio.gameObject.SetActive (false);
 			stegosaurus_audio.gameObject.SetActive (true);
 			stegosaurus_info.gameObject.SetActive(true);
 			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Spinosaurus"))
 		{
+			carnotaurus_audio.gameObject.SetActive(false);
+			brontosaurus_audio.gameObject.SetActive(false);
+			velociraptor_audio.gameObject.SetActive(false);
+			tiranosaurus_audio.gameObject.SetActive(false);
+			triceratops_audio.gameObject.SetActive(false);
+			stegosaurus_audio.gameObject.SetActive(false);
+			parasaurolophus_audio.gameObject.SetActive(false);
+			ankylosaurus_audio.gameObject.SetActive (false);
 			spinosaurus_audio.gameObject.SetActive (true);
 			spinosaurus_info.gameObject.SetActive(true);
 			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Parasaurolophus"))
 		{
+			carnotaurus_audio.gameObject.SetActive(false);
+			brontosaurus_audio.gameObject.SetActive(false);
+			velociraptor_audio.gameObject.SetActive(false);
+			tiranosaurus_audio.gameObject.SetActive(false);
+			triceratops_audio.gameObject.SetActive(false);
+			spinosaurus_audio.gameObject.SetActive(false);
+			stegosaurus_audio.gameObject.SetActive(false);
+			ankylosaurus_audio.gameObject.SetActive (false);
 			parasaurolophus_audio.gameObject.SetActive (true);
 			parasaurolophus_info.gameObject.SetActive(true);
 			background.gameObject.SetActive(true);
