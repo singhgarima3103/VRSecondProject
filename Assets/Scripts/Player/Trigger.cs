@@ -49,6 +49,8 @@ public class Trigger : MonoBehaviour {
         //aim.SetActive(false);
 		if ( aim.tag == "Ankylosaurus")
         {
+			ankylosaurus_info.gameObject.SetActive(true);
+			background.gameObject.SetActive(true);
 			carnotaurus_audio.gameObject.SetActive(false);
 			brontosaurus_audio.gameObject.SetActive(false);
 			velociraptor_audio.gameObject.SetActive(false);
@@ -58,8 +60,6 @@ public class Trigger : MonoBehaviour {
 			stegosaurus_audio.gameObject.SetActive(false);
 			parasaurolophus_audio.gameObject.SetActive(false);
 			ankylosaurus_audio.gameObject.SetActive (true);
-            ankylosaurus_info.gameObject.SetActive(true);
-            background.gameObject.SetActive(true);
         }
 		if (aim.CompareTag("Brontosaurus"))
         {
