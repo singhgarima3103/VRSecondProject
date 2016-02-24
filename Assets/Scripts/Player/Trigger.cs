@@ -29,7 +29,6 @@ public class Trigger : MonoBehaviour {
 	public AudioSource parasaurolophus_audio;
 
 
-    public Image background;
 
     void FixedUpdate()
     {
@@ -50,7 +49,6 @@ public class Trigger : MonoBehaviour {
 		if ( aim.tag == "Ankylosaurus")
         {
 			ankylosaurus_info.gameObject.SetActive(true);
-			background.gameObject.SetActive(true);
 			carnotaurus_audio.gameObject.SetActive(false);
 			brontosaurus_audio.gameObject.SetActive(false);
 			velociraptor_audio.gameObject.SetActive(false);
@@ -73,7 +71,6 @@ public class Trigger : MonoBehaviour {
 			ankylosaurus_audio.gameObject.SetActive (false);
 			brontosaurus_audio.gameObject.SetActive (true);
             brontosaurus_info.gameObject.SetActive(true);
-            background.gameObject.SetActive(true);
         }
 		if (aim.CompareTag("Carnotaurus"))
 		{
@@ -87,7 +84,6 @@ public class Trigger : MonoBehaviour {
 			ankylosaurus_audio.gameObject.SetActive (false);
 			carnotaurus_audio.gameObject.SetActive (true);
 			carnotaurus_info.gameObject.SetActive(true);
-			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Velociraptor"))
 		{
@@ -101,7 +97,6 @@ public class Trigger : MonoBehaviour {
 			ankylosaurus_audio.gameObject.SetActive (false);
 			velociraptor_audio.gameObject.SetActive (true);
 			velociraptor_info.gameObject.SetActive(true);
-			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Triceratops"))
 		{
@@ -115,7 +110,6 @@ public class Trigger : MonoBehaviour {
 			ankylosaurus_audio.gameObject.SetActive (false);
 			triceratops_audio.gameObject.SetActive (true);
 			triceratops_info.gameObject.SetActive(true);
-			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Tiranosaurus"))
 		{
@@ -129,7 +123,6 @@ public class Trigger : MonoBehaviour {
 			ankylosaurus_audio.gameObject.SetActive (false);
 			tiranosaurus_audio.gameObject.SetActive (true);
 			tiranosaurus_info.gameObject.SetActive(true);
-			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Stegosaurus"))
 		{
@@ -143,7 +136,6 @@ public class Trigger : MonoBehaviour {
 			ankylosaurus_audio.gameObject.SetActive (false);
 			stegosaurus_audio.gameObject.SetActive (true);
 			stegosaurus_info.gameObject.SetActive(true);
-			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Spinosaurus"))
 		{
@@ -157,7 +149,6 @@ public class Trigger : MonoBehaviour {
 			ankylosaurus_audio.gameObject.SetActive (false);
 			spinosaurus_audio.gameObject.SetActive (true);
 			spinosaurus_info.gameObject.SetActive(true);
-			background.gameObject.SetActive(true);
 		}
 		if (aim.CompareTag("Parasaurolophus"))
 		{
@@ -171,7 +162,6 @@ public class Trigger : MonoBehaviour {
 			ankylosaurus_audio.gameObject.SetActive (false);
 			parasaurolophus_audio.gameObject.SetActive (true);
 			parasaurolophus_info.gameObject.SetActive(true);
-			background.gameObject.SetActive(true);
 		}
 
         
